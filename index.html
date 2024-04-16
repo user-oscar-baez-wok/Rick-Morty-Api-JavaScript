@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RickAndMorty</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./main.js" defer></script>
+  </head>
+
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <img src="./img/logo.png" alt="" class="nav-logo" />
+        <h1 class="nav-title">Rick And Morty</h1>
+        <div class="nav-menu-icon">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="nav-links-web">
+          <li class="nav-link"><a href="index.html">Inicio</a></li>
+          <li class="nav-link">
+            <a href="https://rickandmortyapi.com/">Documentación Oficial</a>
+          </li>
+        </ul>
+        <ul class="nav-links hiden">
+          <li class="nav-link"><a href="index.html">Inicio</a></li>
+          <li class="nav-link">
+            <a href="https://rickandmortyapi.com/">Documentación Oficial</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="search-container">
+        <img src="./icons/image_search.png" class="search-image" alt="" />
+        <input
+          type="text"
+          class="search-input"
+          id="search-input"
+          placeholder="Buscar personaje...."
+        />
+      </div>
+    </header>
+    <main class="main container">
+      <section class="characters" id="characters"></section>
+      <section class="pagination">
+        <button onclick="Prev()" class="pagination-btn" id="btnPrev">
+          Anterior
+        </button>
+        <button onclick="Next()" class="pagination-btn" id="btnNext">
+          Siguiente
+        </button>
+      </section>
+    </main>
+    <footer class="footer container">
+      <nav class="nav-footer">
+        <img src="./img/logo.png" alt="" class="nav-footer-logo" />
+        <ul class="nav-footer-links">
+          <li class="nav-footer-link"><a href="index.html">Inicio</a></li>
+          <li class="nav-footer-link">
+            <a href="https://rickandmortyapi.com/">Documentación Oficial</a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
+</html>
